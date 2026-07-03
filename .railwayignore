@@ -1,0 +1,7 @@
+venv/ 
+__pycache__/ 
+*.pyc 
+.env 
+uploads/ 
+enlight_cache.db 
+.git/ 
