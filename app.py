@@ -57,7 +57,7 @@ from email.mime.text import MIMEText
 from collections import defaultdict, deque
 from urllib.parse import quote_plus
 
-from fastapi import FastAPI,HTTPException,Request, Depends, Header, UploadFile, File, Form, Query`nfrom fastapi.staticfiles import StaticFiles`nfrom fastapi.staticfiles import StaticFiles`nfrom fastapi.staticfiles import StaticFiles`nfrom fastapi.staticfiles import StaticFiles
+from fastapi import FastAPI,HTTPException,Request,Depends, Header, UploadFile, File, Form, Query`nfrom fastapi.staticfiles import StaticFiles`nfrom fastapi.staticfiles import StaticFiles`nfrom fastapi.staticfiles import StaticFiles`nfrom fastapi.staticfiles import StaticFiles`nfrom fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
@@ -111,7 +111,7 @@ app.add_middleware(
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
-)`napp.mount("/", StaticFiles(directory=".", html=True), name="static")`napp.mount("/", StaticFiles(directory=".", html=True), name="static")`napp.mount("/", StaticFiles(directory=".", html=True), name="static")`napp.mount("/", StaticFiles(directory=".", html=True), name="static")
+)`napp.mount("/", StaticFiles(directory=".", html=True), name="static")`napp.mount("/", StaticFiles(directory=".", html=True), name="static")`napp.mount("/", StaticFiles(directory=".", html=True), name="static")`napp.mount("/", StaticFiles(directory=".", html=True), name="static")`napp.mount("/", StaticFiles(directory=".", html=True), name="static")
 
 # ---------------------------------------------------------------------------
 # Database (SQLite, WAL mode for concurrent request safety)
@@ -816,6 +816,7 @@ if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run("app:app", host="0.0.0.0", port=int(os.getenv("PORT", 8000)), reload=True)
+
 
 
 
